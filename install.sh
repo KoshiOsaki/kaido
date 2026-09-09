@@ -1,13 +1,13 @@
 #!/bin/bash
 # KAIDO を /Applications に入れる。
 #
-#   curl -fsSL https://raw.githubusercontent.com/KoshiOsaki/kaido-install/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/KoshiOsaki/kaido/main/install.sh | bash
 #
 # curl 経由で落とすと com.apple.quarantine が付かないので、未署名でも
 # Gatekeeper の警告なしで起動できる (ブラウザで .dmg を落とすと警告が出る)。
 set -euo pipefail
 
-REPO="${KAIDO_REPO:-KoshiOsaki/kaido-install}"
+REPO="${KAIDO_REPO:-KoshiOsaki/kaido}"
 DEST="${KAIDO_DEST:-/Applications}"
 APP="KAIDO.app"
 
@@ -76,6 +76,6 @@ cat <<'EOS'
 盤面に魔物（セッション）が並ぶには herdr / cmux / tmux 上で Claude Code / Codex が
 動いている必要があります。カレンダー・GitHub・Slack の連携は README の「連携」を参照:
 
-  https://github.com/KoshiOsaki/kaido-install#連携
+  https://github.com/KoshiOsaki/kaido#連携
 
 EOS

@@ -8,7 +8,7 @@
 ## インストール
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/KoshiOsaki/kaido-install/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/KoshiOsaki/kaido/main/install.sh | bash
 ```
 
 `/Applications/KAIDO.app` に入る。起動は `open -a KAIDO`。
