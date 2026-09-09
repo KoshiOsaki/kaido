@@ -1,0 +1,47 @@
+KAIDO License
+Copyright (c) 2026 Koshi Osaki
+
+このソフトウェア（以下「本ソフトウェア」）のソースコードは公開されていますが、
+オープンソースライセンスではありません。以下の条件で利用できます。
+
+## 許可されること
+
+- 個人・業務を問わず、本ソフトウェアを無料で使用すること
+- ソースコードを読み、学習・解説・引用すること
+- 自分の環境で使うために改変すること
+- 改変内容をこのリポジトリへ提案（pull request）すること
+
+## 禁止されること
+
+- 本ソフトウェア、またはその改変物を**販売すること**、および有償の製品・
+  サービスの一部として提供すること
+- 本ソフトウェア、またはその改変物を**再配布すること**（配布物の形式を問わない。
+  ソースコードへのリンクや、公式のリリースページへのリンクは自由）
+- 著作権表示およびこのライセンス文を削除すること
+
+上記の禁止事項について許可が必要な場合は、著作者に連絡してください。
+
+## 保証
+
+本ソフトウェアは「現状のまま」提供され、明示または黙示のいかなる保証も
+伴いません。著作者は、本ソフトウェアの使用または使用不能から生じる
+いかなる損害についても責任を負いません。
+
+---
+
+KAIDO License (English summary — the Japanese text above is authoritative)
+
+The source code of this software is published, but this is NOT an open source
+license.
+
+You MAY use this software free of charge for any purpose including commercial
+use, read and study the source, quote it, and modify it for your own use.
+
+You MAY NOT sell this software or any derivative of it, include it in a paid
+product or service, or redistribute it in any form. Linking to the source
+repository or to the official release page is permitted. You may not remove
+this license or the copyright notice.
+
+Contact the author for permissions beyond this license.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
