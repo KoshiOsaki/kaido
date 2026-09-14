@@ -53,12 +53,12 @@ if [ -d "$DEST/$APP" ]; then
   echo "==> 既存の $APP を置き換えます"
   # 起動中だと差し替えに失敗するので先に落とす
   osascript -e 'quit app "KAIDO"' 2>/dev/null || true
-  # コアは app の子ではなく独立プロセスで、app は port 47831 が空いている
+  # コアは app の子ではなく独立プロセスで、app は port 47832 が空いている
   # ときだけコアを起こす。ここで落とさないと、差し替えた後も古いコアが
   # 生き残り、新しい app が古い挙動のまま動く。
   pkill -f "$DEST/$APP/Contents/Resources/core/server.py" 2>/dev/null || true
   for _ in $(seq 25); do
-    nc -z 127.0.0.1 47831 2>/dev/null || break
+    nc -z 127.0.0.1 47832 2>/dev/null || break
     sleep 0.2
   done
 fi
