@@ -18,7 +18,10 @@ curl -fsSL https://raw.githubusercontent.com/KoshiOsaki/kaido/main/install.sh | 
 - 署名していないので、`.dmg` をブラウザで落とすと Gatekeeper の警告が出る。
   上の curl 経由なら警告は出ない
 
-更新は同じコマンドをもう一度実行する。消すときは `/Applications/KAIDO.app` を捨てる。
+更新はメニューの **KAIDO →「アップデートを確認」**。起動時にも1回だけ確認し、
+新しい版があればその項目が「アップデート v… をインストール」に変わる。押すと
+入れ替えて再起動する。上の curl をもう一度実行しても同じ。消すときは
+`/Applications/KAIDO.app` を捨てる。
 
 ## 使う
 
@@ -31,6 +34,7 @@ curl -fsSL https://raw.githubusercontent.com/KoshiOsaki/kaido/main/install.sh | 
 | 魔物を左右にドラッグ | 期限をその時刻へ動かす |
 | `a` / `s` / `d` / `f` | 再開 / +1h / 後回し / 完了 |
 | ⌘⇧T / ⌘⇧A | 常に最前面 / すべての Space に表示 |
+| ⌘⇧L | 後で一覧 |
 
 怪獣は 19:00 に寝て翌朝 8:00 に起きる。就寝中に期限が来るものは翌朝 9:00 から
 30分刻みで並べ直される。
@@ -71,6 +75,11 @@ python3 /Applications/KAIDO.app/Contents/Resources/core/google-auth.py \
 Claude Code の Slack プラグインを入れて認証し（`/plugin` → slack）、Slack の
 プロフィール →「その他」→「メンバー ID をコピー」で得た ID を
 `kaido.conf` に `slack_user_id=U…` として書く。
+
+そのうえで、メニューの **KAIDO →「Slack 送信数を同期 (claude -p)」** を on にする。
+**既定は off**。数え方が `claude -p` を1時間に1回起こして Slack MCP に検索させる
+方式で、Claude のセッションを消費するため、明示的に on にしたときだけ走る
+（走るのは 10-18 時のみ）。
 
 ## ライセンス
 
